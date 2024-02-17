@@ -18,20 +18,26 @@
         <!-- input container -->
           <div class="flex gap-3 ">
             <!-- Base input -->
-            <input class="w-24 p-1" type="text" placeholder="b"><span>cm</span>
+            <input id="triangle-base-input" class="w-24 p-1" type="number" placeholder="b"><span>cm</span>
              <!-- Height input -->
-            <input class="w-24 p-1" type="text" placeholder="b"><span>cm</span>
+            <input id="triangle-height-input" class="w-24 p-1" type="number" placeholder="b"><span>cm</span>
           </div>
           <!-- Calculate Area -->
           <div>
-            <p>The Calculation is:<span id="area"></span>cm</p>
+            <p>Area = <span id="Triangle-area"></span> cm<sup>2</sup></p>
           </div>
           
           <div class="card-actions justify-end">
-            <button class="btn btn-primary w-full text-white">Calculate</button>
+            <button onclick="areaOfTriangle()" class="btn btn-primary w-full text-white">Calculate</button>
           </div>
         </div>
       </div>
+
+
+
+
+
+      <script src="./script/triangle.js"></script>
 </body>
 
 </html>
